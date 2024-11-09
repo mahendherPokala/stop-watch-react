@@ -1,0 +1,136 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #a7ffeb);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  text-align: center;
+  padding: 100px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.timer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-text {
+  font-size: 2.5rem;
+  color: #00c4b0;
+  font-weight: bold;
+}
+
+.timer-status {
+  font-size: 1rem;
+  color: #00796b;
+  margin-top: 8px;
+}
+
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start-reset-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: transform 0.2s;
+}
+
+.control-button img {
+  width: 34px;
+  margin-right: 8px;
+}
+
+.control-button:hover {
+  transform: scale(1.1);
+}
+
+.set-timer-limit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-limit-text {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.timer-limit-controls {
+  display: flex;
+  align-items: center;
+}
+
+.limit-control-button {
+  color: black;
+  font-size: 2.5rem;
+  border: none;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 8px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.limit-control-button:disabled {
+  background: #b2dfdb;
+  cursor: not-allowed;
+}
+
+.limit-control-button:hover:not(:disabled) {
+  background: #00796b;
+}
+
+.timer-limit-value {
+  font-size: 2.5rem;
+  color: black;
+  font-weight: bold;
+}
